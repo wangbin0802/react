@@ -2,11 +2,11 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
-import SearchModule from "./SearchModule";
+import ContextApp from "./ContextApp";
 
 ReactDOM.render(
   <React.StrictMode>
-    <SearchModule />
+    <ContextApp />
   </React.StrictMode>,
   document.getElementById('root')
 );

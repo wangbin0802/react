@@ -1,5 +1,5 @@
 import ReactDOM from 'react-dom';
-import React from 'react';
+import React, {Suspense} from 'react';
 
 function SearchModule() {
     const PRODUCTS = [
@@ -128,6 +128,8 @@ class FilterableProductTable extends React.Component {
             filterText: '',
             inStockOnly: false
         }
+        this.handleStockChange = this.handleStockChange.bind(this);
+        this.handleFilterTextChange = this.handleFilterTextChange.bind(this);
     }
 
     handleFilterTextChange(filterText) {
@@ -145,6 +147,7 @@ class FilterableProductTable extends React.Component {
     render() {
         return (
             <div>
+                <Suspense fallback={<div>Loading...</div>} />
                 <SearchBar
                     filterText={this.state.filterText}
                     inStockOnly={this.state.inStockOnly}

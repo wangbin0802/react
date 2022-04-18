@@ -2,12 +2,10 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
-import ContextApp from "./ContextApp";
+import GameDemo from "./GameDemo";
 
 ReactDOM.render(
-  <React.StrictMode>
-    <ContextApp />
-  </React.StrictMode>,
+    <GameDemo />,
   document.getElementById('root')
 );
 

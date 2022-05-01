@@ -1,20 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
+<head>
+    <meta charset="utf-8"/>
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta name="theme-color" content="#000000"/>
     <meta
-      name="description"
-      content="Web site created using create-react-app"
+            name="description"
+            content="Web site created using create-react-app"
     />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png"/>
     <!--
       manifest.json provides metadata used when your web app is installed on a
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
     -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json"/>
     <!--
       Notice the use of %PUBLIC_URL% in the tags above.
       It will be replaced with the URL of the `public` folder during the build.
@@ -25,20 +25,47 @@
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
     <title>React App</title>
-  </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <div id="modal-root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+</head>
+<body>
+<noscript>You need to enable JavaScript to run this app.</noscript>
+<div id="root"></div>
+<div id="modal-root"></div>
+<hr/>
+<a href="https://www.baidu.com">百度</a>
+<h2 style="text-align: center;">这是一个标题</h2>
+<table border="1" bgcolor="aqua">
+    <tr>
+        <td>row 1, cell 1</td>
+        <td>row 1, cell 1</td>
+    </tr>
+    <tr>
+        <td>row 1, cell 1</td>
+        <td>row 1, cell 1</td>
+    </tr>
+</table>
+<div id="content" style="background-color: #FFD700;height: 200px;width: 100px;float: right">内容在这里</div>
+<div id="footer" style="background-color:#FFA500;clear:both;text-align:center;">版权 © runoob.com</div>
+<form>
+    First name: <input type="text" name="firstname"/><br>
+    Last name: <input type="text" name="lastname" style="background-color: lawngreen">
+</form>
+<form action="demo_form.php" method="post/get">
+    <input type="text" name="email" size="40" maxlength="50">
+    <input type="password">
+    <input type="checkbox" checked="checked">
+    <input type="radio" checked="checked">
+    <input type="submit" value="Send">
+    <input type="reset">
+    <input type="hidden">
+    <select>
+        <option>苹果</option>
+        <option selected="selected">香蕉</option>
+        <option>樱桃</option>
+    </select>
+    <textarea name="comment" rows="10" cols="20"></textarea>
+    <input type="search" name="googlesearch">
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
-
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
-  </body>
+</form>
+<input type="date" name="bday">
+</body>
 </html>

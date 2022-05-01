@@ -2,6 +2,7 @@ import ReactDOM from 'react-dom';
 import React from 'react';
 import Board from "./model/Board";
 import './model/game.css';
+import Script from 'react-load-script';
 function GameDemo() {
     ReactDOM.render(
         <Game />,
